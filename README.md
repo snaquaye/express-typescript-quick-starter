@@ -1,4 +1,5 @@
-# Awesome Project Build with TypeORM
+# express-typescript-quick-starter
+A starter framework for expressjs and typescript
         
 Steps to run this project:
 
