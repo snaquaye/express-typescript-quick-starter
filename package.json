@@ -1,0 +1,38 @@
+{
+   "name": "emplug-pin-integration",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "test": "mocha --compilers ts:ts-node/register ./test/*.spec.ts",
+      "build": "tsc",
+      "start": "ts-node src/index.ts",
+      "watch": "tsc -w",
+      "serve": "nodemon -e ts --watch src --exec \"npm run build && npm run start\" ",
+      "postinstall": "tsc -p ./tsconfig.json"
+   },
+   "author": "Samson Quaye",
+   "license": "ISC",
+   "dependencies": {
+      "body-parser": "^1.18.2",
+      "class-validator": "^0.8.1",
+      "config": "^1.29.2",
+      "cors": "^2.8.4",
+      "express": "^4.16.2",
+      "mysql": "^2.14.1",
+      "reflect-metadata": "^0.1.10",
+      "routing-controllers": "^0.7.6",
+      "typedi": "^0.6.0",
+      "typeorm": "^0.2.0-alpha.15",
+      "typeorm-typedi-extensions": "^0.1.1",
+      "uid-generator": "^1.0.0"
+   },
+   "devDependencies": {
+      "@types/express": "^4.11.1",
+      "@types/node": "^9.4.0",
+      "eslint-config-google": "^0.9.1",
+      "ts-node": "^4.1.0",
+      "typescript": "^2.7.1",
+      "typescript-eslint-parser": "^12.0.0"
+   }
+}
